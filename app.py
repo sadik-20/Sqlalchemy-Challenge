@@ -93,7 +93,7 @@ def tobs():
 @app.route("/api/v1.0/<start>")
 def start_date(start):
 	print("start_date status:OK")
-	#convert the tsring from user to date
+	#convert the string from user to date
 	start_date = dt.datetime.strptime(start, '%Y-%m-%d').date()
 	last_date_dd = (dt.datetime.strptime(last_date[0][0], '%Y-%m-%d')).date() 
 	first_date_dd = (dt.datetime.strptime(first_date[0][0], '%Y-%m-%d')).date()
